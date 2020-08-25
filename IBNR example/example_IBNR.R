@@ -21,7 +21,7 @@ poisson_deviance <- function(true, predicted) {
 }
 
 ### Fit a simple GLM model to triangle from Taylor and Ashe (1983), which is stored
-### in the ChianLadder package as GenIns
+### in the ChainLadder package as GenIns
 
 triangle = GenIns %>% cum2incr() %>% as.LongTriangle() %>% data.table()
 triangle[,origin := as.integer(origin)]
