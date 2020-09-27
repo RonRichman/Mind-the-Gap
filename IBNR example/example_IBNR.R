@@ -2,6 +2,9 @@
 #### Author: Ronald Richman
 #### License: MIT
 
+### Disable GPU
+Sys.setenv("CUDA_VISIBLE_DEVICES" = -1)
+
 require(data.table)
 require(dplyr)
 require(ggplot2)
